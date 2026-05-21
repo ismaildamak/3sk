@@ -1,1 +1,74 @@
-<meta http-equiv="refresh" content="0.01;https://crn77.com/4/8544165">.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial;
+      background: #f2f2f2;
+      text-align: center;
+      padding-top: 80px;
+    }
+    .box {
+      background: white;
+      padding: 25px;
+      margin: auto;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #ccc;
+    }
+    .btn {
+      background: #2ecc71;
+      color: white;
+      padding: 15px;
+      border: none;
+      width: 100%;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .timer {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>⚠️ Verification Required</h2>
+  <p>Your content is ready. Please continue to access it.</p>
+
+  <div class="timer" id="timer">5</div>
+
+  <button class="btn" id="btn" disabled>Continue</button>
+</div>
+
+<script>
+let time = 5;
+let btn = document.getElementById("btn");
+let timer = document.getElementById("timer");
+
+let x = setInterval(function(){
+  time--;
+  timer.innerHTML = time;
+
+  if(time <= 0){
+    clearInterval(x);
+    btn.disabled = false;
+    btn.innerHTML = "Continue →";
+  }
+},1000);
+
+// redirect to monetag
+btn.onclick = function(){
+  window.location.href = "https://crn77.com/4/11035647";
+};
+</script>
+
+</body>
+</html>
